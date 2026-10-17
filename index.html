@@ -28,8 +28,16 @@
     .portrait{min-height:430px;border:1px solid #292929;border-radius:22px;background:linear-gradient(145deg,#1c1c1c,#0d0d0d 55%,#25150c);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
     .portrait:before,.portrait:after{content:"";position:absolute;border:1px solid rgba(255,122,26,.25);border-radius:50%;width:310px;height:310px}
     .portrait:after{width:410px;height:410px}
-    .initials{z-index:1;width:178px;height:178px;border-radius:50%;display:grid;place-items:center;background:#151515;border:2px solid var(--accent);box-shadow:0 0 65px rgba(255,122,26,.2);font-size:54px;font-weight:900;letter-spacing:-3px}
-    .portrait-note{position:absolute;bottom:24px;left:24px;right:24px;display:flex;justify-content:space-between;gap:12px;color:#aaa;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.profile-photo{
+  z-index:1;
+  width:250px;
+  height:300px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:50%;
+  border:2px solid var(--accent);
+  box-shadow:0 0 65px rgba(255,122,26,.2);
+}    .portrait-note{position:absolute;bottom:24px;left:24px;right:24px;display:flex;justify-content:space-between;gap:12px;color:#aaa;font-size:12px;letter-spacing:1px;text-transform:uppercase}
     section{padding:76px 0;border-top:1px solid rgba(255,255,255,.07)}
     .section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}
     h2{font-size:clamp(30px,4vw,43px);line-height:1.1;margin:8px 0 0;letter-spacing:-1.2px}
@@ -83,7 +91,7 @@
           </div>
         </div>
         <div class="portrait" aria-label="Portrait placeholder">
-          <div class="initials">HM</div>
+          <img src="profile.jpg" alt="Hossam Medhat" class="profile-photo">
           <div class="portrait-note"><span>Creative Editing</span><span>Based in Egypt</span></div>
         </div>
       </section>
